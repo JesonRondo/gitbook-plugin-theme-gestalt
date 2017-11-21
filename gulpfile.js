@@ -19,11 +19,11 @@ gulp.task( "copy", function() {
 
     // Copy over stuff
 
-    var fonts = gulp.src( ["node_modules/font-awesome/fonts/**/"] )
+    var fonts = gulp.src( ["src/fonts/fontawesome/**"] )
     .pipe( gulp.dest("_assets/website/fonts/fontawesome/") )
     ;
 
-    var img = gulp.src( ["node_modules/gitbook-logos/output/favicon.ico"] )
+    var img = gulp.src( ["src/favicon.ico"] )
     .pipe( gulp.dest("_assets/website/images/") )
     ;
 

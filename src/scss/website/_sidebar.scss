@@ -19,7 +19,7 @@ $sidebar-padding-v                  : $sidebar-padding-unit * 2;
 
 // The text color of the sidebar
 $sidebar-color                      : hsl(207, 15%, 25%) !default;
-// 
+//
 $sidebar-font-size                  : 0.8em !default;
 // The background color of the sidebar
 $sidebar-background                 : #fafafa !default;
@@ -61,7 +61,7 @@ $sidebar-header-selected-map        : ( color: $color-primary ) !default;
 
 
 // Sidebar link styling
-$sidebar-link-map                   : ( 
+$sidebar-link-map                   : (
                                         color: $color-text,
                                         font-family: $font-family-base
                                     ) !default;
@@ -87,6 +87,15 @@ $sidebar-divider-map                : ( background: $color-border ) !default;
 {
     padding: $sidebar-padding-v $sidebar-padding-h;
     @include print( $sidebar-logo-map );
+}
+
+.book-logo:after {
+    content: '';
+    display: block;
+    background: url(/assets/logo.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 30px;
 }
 
 .book-logo img
@@ -194,7 +203,7 @@ $sidebar-divider-map                : ( background: $color-border ) !default;
 
     text-overflow: ellipsis;
     white-space: nowrap;
-    
+
     padding: $sidebar-link-padding-v $sidebar-link-padding-h;
 
     border-bottom: none;
